@@ -36,7 +36,7 @@ namespace MscrmTools.AttributeNamingChecker
         public string BlackList { get; set; }
 
         [Category("Processing")]
-        [DisplayName("Export only unmanaged attributes")]
+        [DisplayName("Analyze only unmanaged attributes")]
         [Description("")]
         public bool ExportUnmanagedOnly { get; set; } = true;
 
@@ -51,7 +51,7 @@ namespace MscrmTools.AttributeNamingChecker
         public int ValidLevel { get; set; } = 95;
 
         [Category("Score levels")]
-        [DisplayName("Middle")]
+        [DisplayName("Acceptable")]
         [Description("Specify the percentage above which the score is considered acceptable. A value under this score is considered as bad")]
         public int WarningLevel { get; set; } = 80;
 
